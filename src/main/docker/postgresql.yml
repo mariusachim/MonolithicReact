@@ -1,0 +1,11 @@
+version: '2'
+services:
+    monolithreact-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/MonolithReact/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=MonolithReact
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
